@@ -17,6 +17,7 @@ import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 import { colors } from '../theme';
+import { navigationItems } from '../data/companyData';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,13 +34,7 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'Roadmap', href: '#roadmap' },
-    { label: 'Vision', href: '#vision' },
-    { label: 'About', href: '#about' }
-  ];
+  const navItems = navigationItems;
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);

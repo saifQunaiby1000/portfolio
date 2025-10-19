@@ -3,21 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:frontend": "cd frontend/my-react-app && npm run dev",
-    "dev:backend": "cd backend && npm run dev",
-    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
-    "start:frontend": "cd frontend/my-react-app && npm start",
-    "start:backend": "cd backend && npm start",
-    "install:all": "npm install && cd frontend/my-react-app && npm install && cd ../../backend && npm install",
+    "dev": "cd frontend/my-react-app && npm run dev",
+    "start": "cd frontend/my-react-app && npm start",
+    "install:all": "npm install && cd frontend/my-react-app && npm install",
     "build": "cd frontend/my-react-app && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["saif", "company", "software", "development", "react", "node", "express"],
+  "keywords": ["saif", "company", "software", "development", "react", "static"],
   "author": "Saif Company",
   "license": "ISC",
-  "description": "Saif Company - Innovative Software Solutions for a Better Digital Future",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
-  }
+  "description": "MLY Company - Innovative Software Solutions for a Better Digital Future"
 }

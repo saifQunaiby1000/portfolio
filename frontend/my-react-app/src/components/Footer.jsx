@@ -16,6 +16,7 @@ import {
 } from '@mui/icons-material';
 import Logo from './Logo';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const Footer = () => {
   const theme = useTheme();
@@ -119,7 +120,7 @@ const Footer = () => {
               >
                 <Box
                   component="a"
-                  href="mailto:saifqunaiby1000@gmail.com"
+                  href={`mailto:${companyData.contact.email}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -149,7 +150,7 @@ const Footer = () => {
                     Email
                   </Typography>
                   <Typography variant="body2" sx={{ color: colors.text.secondary }}>
-                    saifqunaiby1000@gmail.com
+                    {companyData.contact.email}
                   </Typography>
                   </Card>
                 </Box>
@@ -163,7 +164,7 @@ const Footer = () => {
               >
                 <Box
                   component="a"
-                  href="tel:+962779626786"
+                  href={`tel:${companyData.contact.phone.replace(/\s/g, '')}`}
                   sx={{
                     textDecoration: 'none',
                     display: 'block'
@@ -191,7 +192,7 @@ const Footer = () => {
                       Phone
                     </Typography>
                     <Typography variant="body2" sx={{ color: colors.text.secondary }}>
-                      +962 779 626 786
+                      {companyData.contact.phone}
                     </Typography>
                   </Card>
                 </Box>
@@ -205,7 +206,7 @@ const Footer = () => {
               >
                 <Box
                   component="a"
-                  href="https://wa.me/962779626786"
+                  href={`https://wa.me/${companyData.contact.whatsapp.replace(/\s/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -235,7 +236,7 @@ const Footer = () => {
                       WhatsApp
                     </Typography>
                     <Typography variant="body2" sx={{ color: colors.text.secondary }}>
-                      +962 779 626 786
+                      {companyData.contact.whatsapp}
                     </Typography>
                   </Card>
                 </Box>

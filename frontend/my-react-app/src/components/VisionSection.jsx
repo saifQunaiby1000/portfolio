@@ -17,6 +17,7 @@ import {
   Security as SecurityIcon
 } from '@mui/icons-material';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const VisionSection = () => {
   const theme = useTheme();

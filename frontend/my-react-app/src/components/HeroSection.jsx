@@ -9,6 +9,7 @@ import {
 import { motion } from 'framer-motion';
 import Logo from './Logo';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const HeroSection = () => {
   const theme = useTheme();
@@ -162,7 +163,7 @@ const HeroSection = () => {
                 lineHeight: 1.3
               }}
             >
-              Innovative Software Solutions for a Better Digital Future
+              {companyData.tagline}
             </Typography>
           </motion.div>
         </motion.div>

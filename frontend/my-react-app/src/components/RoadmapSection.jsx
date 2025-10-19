@@ -18,6 +18,7 @@ import {
   EmojiEvents as TrophyIcon
 } from '@mui/icons-material';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const RoadmapSection = () => {
   const theme = useTheme();

@@ -21,61 +21,27 @@ import {
   Analytics as AnalyticsIcon
 } from '@mui/icons-material';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const ServicesSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const services = [
-    {
-      icon: <WebIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Web Development',
-      description: 'We develop modern and fast websites using the latest technologies like React, Next.js, and Vue.js',
-      features: ['Responsive Design', 'SEO Optimization', 'High Performance', 'Advanced Security']
-    },
-    {
-      icon: <MobileIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Mobile Applications',
-      description: 'High-quality Android and iOS applications using React Native and Flutter',
-      features: ['Elegant Design', 'Fast Performance', 'User-Friendly Interface', 'Full Support']
-    },
-    {
-      icon: <AiIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Artificial Intelligence',
-      description: 'Smart solutions using artificial intelligence and machine learning to optimize your operations',
-      features: ['Data Analysis', 'Automation', 'Predictions', 'Optimization']
-    },
-    {
-      icon: <CloudIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Cloud Computing',
-      description: 'Secure and reliable cloud services for hosting and managing your applications',
-      features: ['Secure Hosting', 'Backup Solutions', 'Scalability', '24/7 Support']
-    },
-    {
-      icon: <SecurityIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Cybersecurity',
-      description: 'Comprehensive protection for your data and systems from cyber threats',
-      features: ['Advanced Protection', 'Continuous Monitoring', 'Rapid Response', 'Staff Training']
-    },
-    {
-      icon: <PerformanceIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Performance Optimization',
-      description: 'Optimize the performance of your websites and applications for the best user experience',
-      features: ['Performance Analysis', 'Speed Optimization', 'Resource Reduction', 'Continuous Monitoring']
-    },
-    {
-      icon: <SupportIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Technical Support',
-      description: 'Specialized technical support around the clock to ensure continuity of your systems',
-      features: ['24/7 Support', 'Rapid Response', 'Expert Specialists', 'Custom Solutions']
-    },
-    {
-      icon: <AnalyticsIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Data Analytics',
-      description: 'Comprehensive analysis of your data to extract valuable insights that help in making informed decisions',
-      features: ['Detailed Reports', 'Actionable Insights', 'Accurate Predictions', 'Custom Recommendations']
-    }
-  ];
+  const iconMap = {
+    Web: <WebIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Mobile: <MobileIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    AI: <AiIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Cloud: <CloudIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Security: <SecurityIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Performance: <PerformanceIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Support: <SupportIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
+    Analytics: <AnalyticsIcon sx={{ fontSize: 50, color: colors.primary.main }} />
+  };
+
+  const services = companyData.services.map(service => ({
+    ...service,
+    icon: iconMap[service.icon]
+  }));
 
   const containerVariants = {
     hidden: { opacity: 0 },

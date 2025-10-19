@@ -23,52 +23,25 @@ import {
   WhatsApp as WhatsAppIcon
 } from '@mui/icons-material';
 import { colors } from '../theme';
+import { companyData } from '../data/companyData';
 
 const AboutSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const stats = [
-    {
-      icon: <CodeIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      number: '50+',
-      label: 'Completed Projects',
-      description: 'Successful and completed projects for various clients'
-    },
-    {
-      icon: <PeopleIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      number: '30+',
-      label: 'Satisfied Clients',
-      description: 'Happy and satisfied clients with our services'
-    },
-    {
-      icon: <AwardsIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      number: '5+',
-      label: 'Years Experience',
-      description: 'Years of experience in programming and development'
-    },
-    {
-      icon: <GrowthIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      number: '100%',
-      label: 'Success Rate',
-      description: 'High success rate in project completion'
-    }
-  ];
+  const iconMap = {
+    Code: <CodeIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
+    People: <PeopleIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
+    Awards: <AwardsIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
+    Growth: <GrowthIcon sx={{ fontSize: 40, color: colors.primary.main }} />
+  };
 
-  const teamMembers = [
-    {
-      name: 'Saif Ahmed',
-      role: 'CEO & Lead Developer',
-      avatar: 'S',
-      description: 'Extensive experience in web and application development'
-    },
-    {
-      name: 'Development Team',
-      role: 'Specialized Developers',
-      avatar: 'T',
-      description: 'A team of skilled and creative developers'
-    }
-  ];
+  const stats = companyData.stats.map(stat => ({
+    ...stat,
+    icon: iconMap[stat.icon]
+  }));
+
+  const teamMembers = companyData.team;
 
   const containerVariants = {
     hidden: { opacity: 0 },
