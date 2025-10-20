@@ -122,7 +122,7 @@ const Footer = () => {
                 mt: 4
               }}
             >
-              Contact Us
+              Get In Touch
             </Typography>
             <Typography
               variant="body1"
@@ -134,7 +134,7 @@ const Footer = () => {
                 lineHeight: 1.6
               }}
             >
-              Get in touch with us for your next project
+              Let's discuss opportunities and collaborate on exciting projects
             </Typography>
           </Box>
 

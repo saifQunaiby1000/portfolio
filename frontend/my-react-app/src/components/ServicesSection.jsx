@@ -115,7 +115,7 @@ const ServicesSection = () => {
                 mb: 2
               }}
             >
-              Our Services
+              My Skills
             </Typography>
             <Typography
               variant="body1"
@@ -127,7 +127,7 @@ const ServicesSection = () => {
                 lineHeight: 1.6
               }}
             >
-              We offer a comprehensive range of advanced software services to help you achieve your digital goals
+              Technical expertise in full-stack development using modern technologies and best practices
             </Typography>
           </Box>
         </motion.div>
@@ -150,7 +150,8 @@ const ServicesSection = () => {
                   <Card
                     sx={{
                       height: '100%',
-                      width: '100%',
+                      width: { xs: 240, sm: 280, md: 300 },
+                      minHeight: { xs: 200, sm: 240, md: 260 },
                       maxWidth: '500px',
                       display: 'flex',
                       flexDirection: 'column',

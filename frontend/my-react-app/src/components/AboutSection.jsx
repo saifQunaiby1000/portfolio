@@ -129,7 +129,7 @@ const AboutSection = () => {
                 mb: 2
               }}
             >
-              About Us
+              About Me
             </Typography>
             <Typography
               variant="body1"
@@ -141,12 +141,12 @@ const AboutSection = () => {
                 lineHeight: 1.6
               }}
             >
-              Saif Company - Where creativity meets technology to create exceptional software solutions
+              Software Engineering graduate passionate about creating innovative web applications using modern technologies
             </Typography>
           </Box>
         </motion.div>
 
-        {/* إحصائيات الشركة */}
+        {/* Personal Statistics */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -159,7 +159,7 @@ const AboutSection = () => {
                 <motion.div variants={itemVariants} style={{ height: '100%', display: 'flex' }}>
                   <Card
                     sx={{
-                      height: { xs: 200, sm: 240, md: 260 },
+                      height: { xs: 220, sm: 240, md: 260 },
                       width: { xs: 240, sm: 280, md: 300 },
                       minHeight: { xs: 200, sm: 240, md: 260 },
                       display: 'flex',

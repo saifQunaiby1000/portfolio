@@ -26,27 +26,27 @@ const VisionSection = () => {
   const sections = [
     {
       icon: <VisionIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Our Vision',
-      content: 'To be the leading company in innovative software solutions in the region, and become the preferred partner for companies and institutions seeking digital transformation and technical development.',
-      highlight: 'Leadership in Innovative Software Solutions'
+      title: 'My Vision',
+      content: 'To become a senior full-stack developer who creates innovative web applications that solve real-world problems and enhance user experiences.',
+      highlight: 'Senior Full-Stack Developer'
     },
     {
       icon: <MissionIcon sx={{ fontSize: 50, color: colors.accent.main }} />,
-      title: 'Our Mission',
-      content: 'We are committed to providing high-quality and innovative software solutions that help our clients achieve their business and technical goals. We seek to build long-term partnerships based on trust and excellence.',
-      highlight: 'High-Quality and Innovative Software Solutions'
+      title: 'My Mission',
+      content: 'Continuously learning and growing in the field of software development, delivering high-quality solutions while contributing to collaborative team environments.',
+      highlight: 'Continuous Learning & Growth'
     },
     {
       icon: <ValuesIcon sx={{ fontSize: 50, color: colors.primary.light }} />,
-      title: 'Our Values',
-      content: 'Innovation, Quality, Transparency, Teamwork, and Continuous Development. We believe that these values are the foundation of our success and customer satisfaction.',
-      highlight: 'Innovation, Quality, Transparency'
+      title: 'My Values',
+      content: 'Problem-solving, continuous learning, attention to detail, teamwork, and delivering quality work are the principles that guide my professional journey.',
+      highlight: 'Problem-Solving & Quality'
     },
     {
       icon: <SecurityIcon sx={{ fontSize: 50, color: colors.primary.main }} />,
-      title: 'Data Security',
-      content: 'We apply the highest cybersecurity standards to protect our clients data. We use advanced encryption technologies and apply best practices in digital security.',
-      highlight: 'Highest Cybersecurity Standards'
+      title: 'Technical Focus',
+      content: 'I focus on writing clean, secure, and maintainable code while following best practices in software development and modern development workflows.',
+      highlight: 'Clean & Secure Code'
     }
   ];
 
@@ -135,7 +135,7 @@ const VisionSection = () => {
                 mb: 2
               }}
             >
-              Our Vision & Mission
+              My Goals & Vision
             </Typography>
             <Typography
               variant="body1"
@@ -147,7 +147,7 @@ const VisionSection = () => {
                 lineHeight: 1.6
               }}
             >
-              We believe that technology should serve humanity and contribute to building a better future for everyone
+              My professional vision and goals as a software developer committed to continuous learning and growth
             </Typography>
           </Box>
         </motion.div>
@@ -283,7 +283,7 @@ const VisionSection = () => {
                 mb: 2
               }}
             >
-              "We believe that technology should serve humanity"
+              "I believe that technology should serve humanity"
             </Typography>
             <Typography
               variant="body1"
@@ -295,7 +295,7 @@ const VisionSection = () => {
                 lineHeight: 1.6
               }}
             >
-              We strive to build a better digital future where technology becomes a tool to improve people's lives and increase business efficiency
+              I strive to build a better digital future where technology becomes a tool to improve people's lives and increase business efficiency
             </Typography>
           </Box>
         </motion.div>
