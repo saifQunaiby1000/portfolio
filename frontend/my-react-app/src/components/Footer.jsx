@@ -112,7 +112,7 @@ const Footer = () => {
             </Typography>
           </Box>
 
-          <Grid container spacing={4} sx={{ justifyContent: 'center', mb: 6 }}>
+          <Grid container spacing={4} sx={{ justifyContent: 'center', alignItems: 'stretch', mb: 6 }}>
             <Grid item xs={12} sm={6} md={4}>
               <motion.div
                 whileHover={{ scale: 1.02, y: -8 }}
@@ -136,7 +136,8 @@ const Footer = () => {
                       borderRadius: '20px',
                       p: 4,
                       minWidth: { xs: 'auto', sm: 260 },
-                      minHeight: { xs: 160, sm: 200 },
+                      minHeight: { xs: 180, sm: 220 },
+                      height: '100%',
                       textAlign: 'center',
                       transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                       cursor: 'pointer',
@@ -180,7 +181,8 @@ const Footer = () => {
                       borderRadius: '20px',
                       p: 4,
                       minWidth: { xs: 'auto', sm: 260 },
-                      minHeight: { xs: 160, sm: 200 },
+                      minHeight: { xs: 180, sm: 220 },
+                      height: '100%',
                       textAlign: 'center',
                       transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                       cursor: 'pointer',
@@ -226,7 +228,8 @@ const Footer = () => {
                       borderRadius: '20px',
                       p: 4,
                       minWidth: { xs: 'auto', sm: 260 },
-                      minHeight: { xs: 160, sm: 200 },
+                      minHeight: { xs: 180, sm: 220 },
+                      height: '100%',
                       textAlign: 'center',
                       transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                       cursor: 'pointer',

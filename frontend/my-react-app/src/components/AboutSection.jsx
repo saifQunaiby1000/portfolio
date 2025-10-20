@@ -43,6 +43,10 @@ const AboutSection = () => {
 
   const teamMembers = companyData.team;
 
+  const getCardSize = (index) => ({
+    minHeight: { xs: 200, sm: 220, md: index % 3 === 0 ? 280 : index % 3 === 1 ? 240 : 260 }
+  });
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -153,7 +157,7 @@ const AboutSection = () => {
                     sx={{
                       height: '100%',
                       width: '100%',
-                      // Remove fixed minWidth to allow proper responsiveness on small screens
+                      ...getCardSize(index),
                       display: 'flex',
                       flexDirection: 'column',
                       background: colors.background.card,
