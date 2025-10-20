@@ -1,221 +1,185 @@
-// Company Data
+// Portfolio Data
 export const companyData = {
-  // Company Info
-  name: "Saif Company",
-  tagline: "Innovative Software Solutions for a Better Digital Future",
-  description: "We provide innovative and advanced software solutions to help you achieve your digital and business goals.",
+  // Personal Info
+  name: "Saif Mazen Qunaiby",
+  tagline: "Full-Stack Developer | Software Engineering Graduate",
+  description: "Passionate full-stack developer specializing in MERN stack development. Recent graduate with hands-on experience in building modern web applications and RESTful APIs.",
   
   // Contact Information
   contact: {
     email: "saifqunaiby1000@gmail.com",
-    phone: "+962 779 626 786",
-    whatsapp: "+962 779 626 786",
-    address: "Jordan"
+    phone: "+962 77 962 6786",
+    whatsapp: "+962 77 962 6786",
+    address: "Amman, Jordan"
   },
 
-  // Services
+  // Skills & Services
   services: [
     {
       id: 1,
       icon: "Web",
-      title: "Web Development",
-      description: "We develop modern and fast websites using the latest technologies like React, Next.js, and Vue.js",
-      features: ["Responsive Design", "SEO Optimization", "High Performance", "Advanced Security"]
+      title: "Frontend Development",
+      description: "Modern React.js applications with Redux Toolkit, responsive design, and optimized user experiences",
+      features: ["React.js", "Redux Toolkit", "JavaScript ES6+", "HTML5/CSS3", "Bootstrap", "Responsive Design"]
     },
     {
       id: 2,
       icon: "Mobile",
-      title: "Mobile Applications",
-      description: "High-quality Android and iOS applications using React Native and Flutter",
-      features: ["Elegant Design", "Fast Performance", "User-Friendly Interface", "Full Support"]
+      title: "Backend Development",
+      description: "RESTful APIs using Node.js and Express.js with MongoDB integration and authentication systems",
+      features: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "MongoDB", "CRUD Operations"]
     },
     {
       id: 3,
       icon: "AI",
-      title: "Artificial Intelligence",
-      description: "Smart solutions using artificial intelligence and machine learning to optimize your operations",
-      features: ["Data Analysis", "Automation", "Predictions", "Optimization"]
+      title: "Database Management",
+      description: "MongoDB database design, schema modeling, and data management with Mongoose ODM",
+      features: ["MongoDB", "Mongoose", "Schema Design", "Data Modeling", "Query Optimization", "Database Security"]
     },
     {
       id: 4,
       icon: "Cloud",
-      title: "Cloud Computing",
-      description: "Secure and reliable cloud services for hosting and managing your applications",
-      features: ["Secure Hosting", "Backup Solutions", "Scalability", "24/7 Support"]
+      title: "Full-Stack Applications",
+      description: "Complete MERN stack applications from frontend to backend with seamless integration",
+      features: ["MERN Stack", "Full-Stack Integration", "API Development", "Authentication", "State Management"]
     },
     {
       id: 5,
       icon: "Security",
-      title: "Cybersecurity",
-      description: "Comprehensive protection for your data and systems from cyber threats",
-      features: ["Advanced Protection", "Continuous Monitoring", "Rapid Response", "Staff Training"]
+      title: "Version Control",
+      description: "Git version control, GitHub collaboration, and modern development workflows",
+      features: ["Git", "GitHub", "Version Control", "Collaboration", "Branching", "Code Review"]
     },
     {
       id: 6,
       icon: "Performance",
-      title: "Performance Optimization",
-      description: "Optimize the performance of your websites and applications for the best user experience",
-      features: ["Performance Analysis", "Speed Optimization", "Resource Reduction", "Continuous Monitoring"]
-    },
-    {
-      id: 7,
-      icon: "Support",
-      title: "Technical Support",
-      description: "Specialized technical support around the clock to ensure continuity of your systems",
-      features: ["24/7 Support", "Rapid Response", "Expert Specialists", "Custom Solutions"]
-    },
-    {
-      id: 8,
-      icon: "Analytics",
-      title: "Data Analytics",
-      description: "Comprehensive analysis of your data to extract valuable insights that help in making informed decisions",
-      features: ["Detailed Reports", "Actionable Insights", "Accurate Predictions", "Custom Recommendations"]
+      title: "Project Management",
+      description: "Problem-solving, debugging, and project delivery with attention to detail and quality",
+      features: ["Problem Solving", "Debugging", "Time Management", "Quality Assurance", "Team Collaboration"]
     }
   ],
 
-  // Roadmap
+  // Experience Timeline
   roadmap: [
     {
       id: 1,
-      phase: "Phase 1",
-      title: "Foundation & Planning",
-      subtitle: "Building the foundation for success",
+      phase: "2025",
+      title: "Backend Intern - Nixpend",
+      subtitle: "Professional Development Experience",
       items: [
-        "Market research and analysis",
-        "Technology stack selection",
-        "Team building and training",
-        "Initial project planning"
+        "Developed RESTful APIs using Node.js and Express.js",
+        "Integrated MongoDB with Mongoose for CRUD operations",
+        "Collaborated with developers to debug and optimize performance",
+        "Gained hands-on experience in backend development"
       ]
     },
     {
       id: 2,
-      phase: "Phase 2",
-      title: "Development & Testing",
-      subtitle: "Creating innovative solutions",
+      phase: "2025",
+      title: "MERN E-Commerce Platform",
+      subtitle: "Full-Stack Project Development",
       items: [
-        "Software development",
-        "Quality assurance testing",
-        "Performance optimization",
-        "Security implementation"
+        "Developed complete e-commerce application using MERN stack",
+        "Implemented React.js frontend with Redux Toolkit and routing",
+        "Built authentication system with JWT and checkout workflow",
+        "Deployed live demo: https://proshop-1-tdcj.onrender.com"
       ]
     },
     {
       id: 3,
-      phase: "Phase 3",
-      title: "Launch & Growth",
-      subtitle: "Scaling and expanding",
+      phase: "2025",
+      title: "Software Engineering Graduate",
+      subtitle: "Academic Foundation",
       items: [
-        "Product launch",
-        "Marketing campaigns",
-        "Client acquisition",
-        "Continuous improvement"
+        "B.Sc. in Software Engineering from Hashemite University",
+        "Strong foundation in programming and software development",
+        "Understanding of modern development workflows and best practices",
+        "Ready to contribute as a Junior Full-Stack Developer"
       ]
     }
   ],
 
-  // Vision, Mission, Values
+  // Personal Vision & Goals
   vision: [
     {
       id: 1,
       icon: "Vision",
-      title: "Our Vision",
-      content: "To be the leading provider of innovative software solutions that transform businesses and create a better digital future for all."
+      title: "My Vision",
+      content: "To become a senior full-stack developer who creates innovative web applications that solve real-world problems and enhance user experiences."
     },
     {
       id: 2,
       icon: "Mission",
-      title: "Our Mission",
-      content: "We are committed to delivering high-quality, scalable, and innovative software solutions that help our clients achieve their goals and stay ahead of the competition."
+      title: "My Mission",
+      content: "Continuously learning and growing in the field of software development, delivering high-quality solutions while contributing to collaborative team environments."
     },
     {
       id: 3,
       icon: "Values",
-      title: "Our Values",
-      content: "Innovation, quality, integrity, and customer satisfaction are the core values that drive everything we do at Saif Company."
+      title: "My Values",
+      content: "Problem-solving, continuous learning, attention to detail, teamwork, and delivering quality work are the principles that guide my professional journey."
     }
   ],
 
-  // About Stats
+  // Personal Stats
   stats: [
     {
       id: 1,
       icon: "Code",
-      number: "50+",
-      label: "Projects Completed"
+      number: "3+",
+      label: "Years Learning",
+      description: "Software Engineering education and hands-on development experience"
     },
     {
       id: 2,
       icon: "People",
-      number: "25+",
-      label: "Happy Clients"
+      number: "1",
+      label: "Internship Completed",
+      description: "Backend development internship at Nixpend with real-world experience"
     },
     {
       id: 3,
       icon: "Awards",
-      number: "10+",
-      label: "Awards Won"
+      number: "2",
+      label: "Major Projects",
+      description: "E-commerce platform and job search website with live deployments"
     },
     {
       id: 4,
       icon: "Growth",
-      number: "99%",
-      label: "Client Satisfaction"
+      number: "100%",
+      label: "Dedication",
+      description: "Committed to continuous learning and professional growth"
     }
   ],
 
-  // Team Members
+  // Personal Info
   team: [
     {
       id: 1,
-      name: "Saif Qunaiby",
-      role: "CEO & Founder",
-      avatar: "SQ",
-      description: "Visionary leader with 10+ years of experience in software development and business strategy."
-    },
-    {
-      id: 2,
-      name: "Ahmed Al-Rashid",
-      role: "CTO",
-      avatar: "AR",
-      description: "Technology expert specializing in modern web technologies and cloud architecture."
-    },
-    {
-      id: 3,
-      name: "Fatima Al-Zahra",
-      role: "Lead Developer",
-      avatar: "FZ",
-      description: "Full-stack developer with expertise in React, Node.js, and mobile app development."
-    },
-    {
-      id: 4,
-      name: "Omar Hassan",
-      role: "UI/UX Designer",
-      avatar: "OH",
-      description: "Creative designer focused on creating beautiful and user-friendly digital experiences."
+      name: "Saif Mazen Qunaiby",
+      role: "Full-Stack Developer",
+      avatar: "SMQ",
+      description: "Software Engineering graduate specializing in MERN stack development with hands-on experience in building modern web applications."
     }
   ],
 
   // Social Links
   socialLinks: [
     {
-      name: "Facebook",
-      url: "https://facebook.com",
-      icon: "Facebook"
-    },
-    {
-      name: "Twitter",
-      url: "https://twitter.com",
-      icon: "Twitter"
+      name: "GitHub",
+      url: "https://github.com/saifQunaiby1000",
+      icon: "GitHub"
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://linkedin.com/in/saif-qunaiby",
       icon: "LinkedIn"
     },
     {
-      name: "Instagram",
-      url: "https://instagram.com",
-      icon: "Instagram"
+      name: "Email",
+      url: "mailto:saifqunaiby1000@gmail.com",
+      icon: "Email"
     }
   ]
 };
@@ -223,9 +187,9 @@ export const companyData = {
 // Navigation Items
 export const navigationItems = [
   { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Roadmap', href: '#roadmap' },
-  { label: 'Vision', href: '#vision' },
+  { label: 'Skills', href: '#services' },
+  { label: 'Experience', href: '#roadmap' },
+  { label: 'Goals', href: '#vision' },
   { label: 'About', href: '#about' }
 ];
 

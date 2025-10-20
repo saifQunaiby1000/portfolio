@@ -27,54 +27,54 @@ const RoadmapSection = () => {
   const phases = [
     {
       icon: <RocketIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      title: 'Phase 1',
-      subtitle: 'Foundation & Early Growth',
+      title: '2022-2025',
+      subtitle: 'Academic Foundation',
       status: 'Completed',
       statusColor: 'success',
       items: [
-        'Launch of software company and team establishment',
-        'Development of initial projects and websites',
-        'Building a trusted client base',
-        'Developing effective work methodology'
+        'Software Engineering degree from Hashemite University',
+        'Learning MERN stack technologies',
+        'Building foundational programming skills',
+        'Understanding software development principles'
       ]
     },
     {
       icon: <TrendingUpIcon sx={{ fontSize: 40, color: colors.accent.main }} />,
-      title: 'Phase 2',
-      subtitle: 'Expansion & Diversification',
-      status: 'In Progress',
-      statusColor: 'warning',
+      title: '2025',
+      subtitle: 'Professional Experience',
+      status: 'Completed',
+      statusColor: 'success',
       items: [
-        'Launch of mobile application services',
-        'Development of AI solutions',
-        'Expansion of technical team',
-        'Creating advanced technical support system'
+        'Backend development internship at Nixpend',
+        'Built RESTful APIs with Node.js and Express.js',
+        'Integrated MongoDB with Mongoose for CRUD operations',
+        'Collaborated with development teams'
       ]
     },
     {
       icon: <PublicIcon sx={{ fontSize: 40, color: colors.primary.light }} />,
-      title: 'Phase 3',
-      subtitle: 'Regional Reach',
-      status: 'Planned',
-      statusColor: 'default',
+      title: '2025',
+      subtitle: 'Major Projects',
+      status: 'Completed',
+      statusColor: 'success',
       items: [
-        'Expansion in regional market',
-        'Strategic partnerships with major companies',
-        'Launch of programming education platform',
-        'Development of specialized software products'
+        'Developed full-stack MERN e-commerce platform',
+        'Built job search website with advanced filtering',
+        'Implemented React.js frontend with Redux Toolkit',
+        'Deployed live demos on Render platform'
       ]
     },
     {
       icon: <TrophyIcon sx={{ fontSize: 40, color: colors.primary.main }} />,
-      title: 'Phase 4',
-      subtitle: 'Leadership & Innovation',
-      status: 'Future',
+      title: 'Future',
+      subtitle: 'Career Growth',
+      status: 'Planned',
       statusColor: 'default',
       items: [
-        'Become the leading company in the region',
-        'Launch innovative technologies',
-        'Contribute to tech community development',
-        'Establish research and development center'
+        'Seeking Junior Full-Stack Developer position',
+        'Continue learning advanced technologies',
+        'Contribute to open-source projects',
+        'Build more complex applications'
       ]
     }
   ];
@@ -154,7 +154,7 @@ const RoadmapSection = () => {
                 mb: 2
               }}
             >
-              Our Roadmap
+              My Experience
             </Typography>
             <Typography
               variant="body1"
@@ -166,7 +166,7 @@ const RoadmapSection = () => {
                 lineHeight: 1.6
               }}
             >
-              Our growth and development journey to become the leading software company in the region
+              Professional journey and key projects that shaped my development skills
             </Typography>
           </Box>
         </motion.div>
