@@ -156,7 +156,8 @@ const Footer = () => {
                     <Card
                       sx={{
                         height: { xs: 200, sm: 240, md: 260 },
-                        width: { xs: '100%', sm: 280, md: 300 },
+                        width: { xs: 240, sm: 280, md: 300 },
+                        minHeight: { xs: 200, sm: 240, md: 260 },
                         background: colors.background.card,
                         backdropFilter: 'blur(20px)',
                         border: `1px solid ${colors.border.light}`,

@@ -159,8 +159,9 @@ const AboutSection = () => {
                 <motion.div variants={itemVariants} style={{ height: '100%', display: 'flex' }}>
                   <Card
                     sx={{
-                      height: { xs: 220, sm: 240, md: 260 },
-                      width: { xs: '100%', sm: 280, md: 300 },
+                      height: { xs: 200, sm: 240, md: 260 },
+                      width: { xs: 240, sm: 280, md: 300 },
+                      minHeight: { xs: 200, sm: 240, md: 260 },
                       display: 'flex',
                       flexDirection: 'column',
                       background: colors.background.card,
