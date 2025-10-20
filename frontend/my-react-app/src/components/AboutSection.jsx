@@ -43,9 +43,13 @@ const AboutSection = () => {
 
   const teamMembers = companyData.team;
 
-  const getCardSize = (index) => ({
-    minHeight: { xs: 200, sm: 220, md: index % 3 === 0 ? 280 : index % 3 === 1 ? 240 : 260 }
-  });
+  const aboutCards = stats.map((stat, index) => ({
+    key: `stat-${index}`,
+    icon: stat.icon,
+    number: stat.number,
+    label: stat.label,
+    description: stat.description
+  }));
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -150,14 +154,13 @@ const AboutSection = () => {
           viewport={{ once: true }}
         >
           <Grid container spacing={4} sx={{ mb: 8, justifyContent: 'center', alignItems: 'stretch' }}>
-            {stats.map((stat, index) => (
-              <Grid item xs={12} sm={6} lg={3} key={index}>
+            {aboutCards.map((card) => (
+              <Grid item xs={12} sm={6} lg={3} key={card.key}>
                 <motion.div variants={itemVariants} style={{ height: '100%', display: 'flex' }}>
                   <Card
                     sx={{
-                      height: '100%',
-                      width: '100%',
-                      ...getCardSize(index),
+                      height: { xs: 220, sm: 240, md: 260 },
+                      width: { xs: '100%', sm: 280, md: 300 },
                       display: 'flex',
                       flexDirection: 'column',
                       background: colors.background.card,
@@ -174,7 +177,7 @@ const AboutSection = () => {
                   >
                     <CardContent sx={{ textAlign: 'center', p: 4, flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <Box sx={{ mb: 2 }}>
-                        {stat.icon}
+                        {card.icon}
                       </Box>
                       <Typography
                         variant="h3"
@@ -184,7 +187,7 @@ const AboutSection = () => {
                           mb: 1
                         }}
                       >
-                        {stat.number}
+                        {card.number}
                       </Typography>
                       <Typography
                         variant="h6"
@@ -194,7 +197,7 @@ const AboutSection = () => {
                           mb: 1
                         }}
                       >
-                        {stat.label}
+                        {card.label}
                       </Typography>
                       <Typography
                         variant="body2"
@@ -203,7 +206,7 @@ const AboutSection = () => {
                           fontSize: '0.9rem'
                         }}
                       >
-                        {stat.description}
+                        {card.description}
                       </Typography>
                     </CardContent>
                   </Card>
