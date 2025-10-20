@@ -153,8 +153,7 @@ const AboutSection = () => {
                     sx={{
                       height: '100%',
                       width: '100%',
-                      minWidth: '450px',
-                      maxWidth: '500px',
+                      // Remove fixed minWidth to allow proper responsiveness on small screens
                       display: 'flex',
                       flexDirection: 'column',
                       background: colors.background.card,
