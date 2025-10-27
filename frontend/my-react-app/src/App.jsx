@@ -5,6 +5,7 @@ import theme from './theme';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
+import ProjectsSection from './components/ProjectsSection';
 import RoadmapSection from './components/RoadmapSection';
 import VisionSection from './components/VisionSection';
 import AboutSection from './components/AboutSection';
@@ -17,6 +18,7 @@ function App() {
       <Navigation />
       <HeroSection />
       <ServicesSection />
+      <ProjectsSection />
       <RoadmapSection />
       <VisionSection />
       <AboutSection />

@@ -90,7 +90,7 @@ const Navigation = () => {
                     py: 1.5
                   }}
                 >
-                  Contact Us
+                  Contact Me
         </Button>
       </Box>
     </Box>
@@ -201,7 +201,7 @@ const Navigation = () => {
             </Box>
           ) : null}
 
-          {/* Contact Us على أقصى اليمين */}
+          {/* Contact Me على أقصى اليمين */}
           {!isMobile ? (
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -244,7 +244,7 @@ const Navigation = () => {
                   }
                 }}
               >
-                Contact Us
+                Contact Me
               </Button>
             </motion.div>
           ) : null}

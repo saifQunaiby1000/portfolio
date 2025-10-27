@@ -188,6 +188,7 @@ export const companyData = {
 export const navigationItems = [
   { label: 'Home', href: '#home' },
   { label: 'Skills', href: '#services' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#roadmap' },
   { label: 'Goals', href: '#vision' },
   { label: 'About', href: '#about' }

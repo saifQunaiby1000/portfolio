@@ -202,7 +202,7 @@ const Footer = () => {
                 width: '100%'
               }}
             >
-              © 2025 Saif Portfolio. All rights reserved.
+              © 2025 Saif Qunaiby. All rights reserved.
             </Typography>
           </Box>
         </motion.div>
